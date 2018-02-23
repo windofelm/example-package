@@ -2,6 +2,8 @@
 
 require_once "vendor/autoload.php";
 
-$syntaxe = new \Syntaxe\Example\Syntaxe();
+use Syntaxe\Example\Syntaxe as Syntaxe;
 
-echo $syntaxe->makeHello();
+$syntaxe = new Syntaxe();
+
+echo $syntaxe->makeHello("John DOE");

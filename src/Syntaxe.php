@@ -9,8 +9,8 @@ class Syntaxe {
         //
     }
 
-    public function makeHello()
+    public function makeHello($name)
     {
-        return "Hello new package.";
+        return "Hello <b>{$name}</b> from new package.";
     }
 }
