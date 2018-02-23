@@ -1,17 +1,28 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: recep_hidir
+ * Date: 23.02.2018
+ * Time: 11:34
+ */
 
-use PHPUnit\Framework\TestCase;
+
 use Syntaxe\Example\Syntaxe;
 
-final class SyntaxeTest extends TestCase
+class SyntaxeTest extends \PHPUnit_Framework_TestCase
 {
-    public function testCanBeStringFormat()
+    public function testTrueIsTrue()
     {
-        $syntaxe = new Syntaxe();
+        $foo = true;
+        $this->assertTrue($foo);
+    }
 
+    public function testOtherCase()
+    {
         $this->assertInstanceOf(
-            Syntaxe::class,
-            $syntaxe->makeHello("Sample SAMPLE")
+            Syntaxe::class, new Syntaxe()
         );
     }
 }
+
+//phpunit --bootstrap ./vendor/autoload.php
