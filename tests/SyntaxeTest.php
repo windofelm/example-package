@@ -26,3 +26,4 @@ class SyntaxeTest extends \PHPUnit_Framework_TestCase
 }
 
 //phpunit --bootstrap ./vendor/autoload.php
+
